@@ -14,7 +14,7 @@ export const headerData = {
           href: getPermalink('/products/functions'),
         }, 
         {
-          text: 'AI训练数据集',
+          text: '训练数据集',
           href: getPermalink('/products/dataset'),
         },
       ],

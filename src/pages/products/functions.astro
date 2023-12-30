@@ -16,14 +16,22 @@ const metadata = {
 
   <Hero
     tagline="工具函数"
-    title="Elevate your projects with our stunning templates"
-    subtitle="Explore our meticulously crafted templates tailored to various industries and purposes. From captivating presentations to functional website designs, we offer the tools you need to succeed."
     actions={[{ variant:"primary", target: '_blank', text: 'Start exploring', href: '/' }]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
       alt: 'AstroWind Hero Image',
     }}
-  />
+  >
+  <Fragment slot="title">
+    使用 <span class="hidden sm:inline">我们令人惊叹的工具函数提升</span> 你的 <span
+      class="text-accent dark:text-white highlight">AI</span
+    > 项目
+  </Fragment>
+
+  <Fragment slot="subtitle">
+    探索我们精心打造的针对各经济指标定制的<span class="font-semibold">工具函数</span> 无论是细致入微的数据检索还是鸿篇巨制的研究报告，我们提供你成功所需的工具。
+  </Fragment>
+  </Hero>
 
   <!-- Features2 Widget ************** -->
 
