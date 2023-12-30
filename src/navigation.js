@@ -10,13 +10,13 @@ export const headerData = {
           href: getPermalink('/products/chat'),
         },
         {
-          text: 'Startup',
-          href: getPermalink('/products/startup'),
-        },
-        {
-          text: 'Services',
-          href: getPermalink('/services'),
+          text: '工具函数',
+          href: getPermalink('/products/functions'),
         }, 
+        {
+          text: 'AI训练数据集',
+          href: getPermalink('/products/dataset'),
+        },
       ],
     },
     {
