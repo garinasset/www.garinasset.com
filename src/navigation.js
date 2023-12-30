@@ -212,7 +212,7 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/garinops/www.garinasset.com' },
   ],
   footNote: `
-    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-   版权所有 &copy; 2022-2024<strong>&nbsp;嘉林（北京）有限公司</strong> · Build on <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://github.com/onwidget/astrowind"> Astrowind</a>
+    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(/src/assets/images/logo.png)]"></span>
+   版权所有 &copy; 2022-2024<strong>&nbsp;嘉林（北京）有限公司</strong><a class="text-blue-600 hover:underline dark:text-gray-200" href="https://github.com/onwidget/astrowind"></a>
   `,
 };
