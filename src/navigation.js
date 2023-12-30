@@ -114,30 +114,6 @@ export const headerData = {
     //       text: 'Features (Anchor Link)',
     //       href: getPermalink('/#features'),
     //     },
-    //     {
-    //       text: 'Services',
-    //       href: getPermalink('/services'),
-    //     },
-    //     {
-    //       text: 'Pricing',
-    //       href: getPermalink('/pricing'),
-    //     },
-    //     {
-    //       text: 'About us',
-    //       href: getPermalink('/about'),
-    //     },
-    //     {
-    //       text: 'Contact',
-    //       href: getPermalink('/contact'),
-    //     },
-    //     {
-    //       text: 'Terms',
-    //       href: getPermalink('/terms'),
-    //     },
-    //     {
-    //       text: 'Privacy policy',
-    //       href: getPermalink('/privacy'),
-    //     },
     //    {
     //      text: 'Personal',
     //      href: getPermalink('/products/personal'),
@@ -156,29 +132,22 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: '产品',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: '聊天完成', href: getPermalink('/products/chat')},
+        { text: '工具函数', href: getPermalink('/products/functions') },
+        { text: 'AI训练数据集', href: getPermalink('/products/dataset') },
       ],
     },
     {
-      title: 'Platform',
+      title: '平台',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: '开发者平台', href: '#' },
+        { text: 'Python', href: '#' },
       ],
     },
     {
-      title: 'Support',
+      title: '支持',
       links: [
         { text: 'Docs', href: '#' },
         { text: 'Community Forum', href: '#' },
@@ -188,10 +157,10 @@ export const footerData = {
       ],
     },
     {
-      title: 'Company',
+      title: '公司',
       links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
+        { text: '关于', href: getPermalink('/about') },
+        { text: '博客', href: getBlogPermalink() },
         { text: 'Careers', href: '#' },
         { text: 'Press', href: '#' },
         { text: 'Inclusion', href: '#' },
