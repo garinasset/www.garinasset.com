@@ -6,8 +6,8 @@ export const headerData = {
       text: '产品及服务',
       links: [
         {
-          text: 'SaaS',
-          href: getPermalink('/products/saas'),
+          text: '聊天完成',
+          href: getPermalink('/products/chat'),
         },
         {
           text: 'Startup',
