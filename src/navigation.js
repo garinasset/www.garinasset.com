@@ -105,7 +105,7 @@ export const headerData = {
     },
     {
       text: '移动应用',
-      href: getPermalink('/products/mobile-app'),
+      href: getPermalink('/mobile-app'),
     },
     // {
     //   text: 'Pages',
