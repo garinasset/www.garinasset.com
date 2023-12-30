@@ -50,7 +50,7 @@
 
 ## Demo
 
-📌 [https://astrowind.vercel.app/](https://astrowind.vercel.app/)
+📌 [https://www.garinasset.com/](https://www.garinasset.com/)
 
 <br>
 
