@@ -136,7 +136,7 @@ export const footerData = {
       links: [
         { text: '聊天完成', href: getPermalink('/products/chat')},
         { text: '工具函数', href: getPermalink('/products/functions') },
-        { text: 'AI训练数据集', href: getPermalink('/products/dataset') },
+        { text: '训练数据集', href: getPermalink('/products/dataset') },
       ],
     },
     {
