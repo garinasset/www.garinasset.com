@@ -3,7 +3,7 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
     {
-      text: 'Homes',
+      text: '产品及服务',
       links: [
         {
           text: 'SaaS',
@@ -14,50 +14,26 @@ export const headerData = {
           href: getPermalink('/homes/startup'),
         },
         {
-          text: 'Mobile App',
-          href: getPermalink('/homes/mobile-app'),
-        },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
-        },
+          text: 'Services',
+          href: getPermalink('/services'),
+        }, 
       ],
     },
     {
-      text: 'Pages',
+      text: '定价与支持',
       links: [
         {
-          text: 'Features (Anchor Link)',
-          href: getPermalink('/#features'),
-        },
-        {
-          text: 'Services',
-          href: getPermalink('/services'),
-        },
-        {
-          text: 'Pricing',
+          text: '定价',
           href: getPermalink('/pricing'),
         },
         {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
+          text: '获取联络',
           href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
         },
       ],
     },
     {
-      text: 'Landing',
+      text: '文档',
       links: [
         {
           text: 'Lead Generation',
@@ -86,7 +62,7 @@ export const headerData = {
       ],
     },
     {
-      text: 'Blog',
+      text: '博客',
       links: [
         {
           text: 'Blog List',
@@ -111,11 +87,70 @@ export const headerData = {
       ],
     },
     {
-      text: 'Widgets',
-      href: '#',
+      text: '关于',
+      links: [
+        {
+          text: '关于我们',
+          href: getPermalink('/about'),
+        },
+        {
+          text: '专业术语',
+          href: getPermalink('/terms'),
+        },
+        {
+          text: '隐私政策',
+          href: getPermalink('/privacy'),
+        },
+      ],
     },
+    {
+      text: '移动应用',
+      href: getPermalink('/homes/mobile-app'),
+    },
+    // {
+    //   text: 'Pages',
+    //   links: [
+    //     {
+    //       text: 'Features (Anchor Link)',
+    //       href: getPermalink('/#features'),
+    //     },
+    //     {
+    //       text: 'Services',
+    //       href: getPermalink('/services'),
+    //     },
+    //     {
+    //       text: 'Pricing',
+    //       href: getPermalink('/pricing'),
+    //     },
+    //     {
+    //       text: 'About us',
+    //       href: getPermalink('/about'),
+    //     },
+    //     {
+    //       text: 'Contact',
+    //       href: getPermalink('/contact'),
+    //     },
+    //     {
+    //       text: 'Terms',
+    //       href: getPermalink('/terms'),
+    //     },
+    //     {
+    //       text: 'Privacy policy',
+    //       href: getPermalink('/privacy'),
+    //     },
+    //    {
+    //      text: 'Personal',
+    //      href: getPermalink('/homes/personal'),
+    //    },
+    //   ],
+    // },
+
+    // {
+    //   text: 'Widgets',
+    //   href: '#',
+    // },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
+  actions: [{ text: '立即试用', href: 'https://github.com/garinops/www.garinasset.com', target: '_blank' }],
 };
 
 export const footerData = {
@@ -166,15 +201,15 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: '专业术语', href: getPermalink('/terms') },
+    { text: '隐私政策', href: getPermalink('/privacy') },
   ],
   socialLinks: [
     { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/garinops/www.garinasset.com' },
   ],
   footNote: `
     <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
