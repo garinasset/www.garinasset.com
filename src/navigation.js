@@ -37,26 +37,32 @@ export const headerData = {
       links: [
         {
           text: 'Lead Generation',
+          target: '_blank',
           href: getPermalink('/documents/lead-generation'),
         },
         {
           text: 'Long-form Sales',
+          target: '_blank',
           href: getPermalink('/documents/sales'),
         },
         {
           text: 'Click-Through',
+          target: '_blank',
           href: getPermalink('/documents/click-through'),
         },
         {
           text: 'Product Details (or Services)',
+          target: '_blank',
           href: getPermalink('/documents/product'),
         },
         {
           text: 'Coming Soon or Pre-Launch',
+          target: '_blank',
           href: getPermalink('/documents/pre-launch'),
         },
         {
           text: 'Subscription',
+          target: '_blank',
           href: getPermalink('/documents/subscription'),
         },
       ],
