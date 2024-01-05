@@ -1,9 +1,10 @@
 ---
+import { Image } from 'astro:assets';
+import logo from '~/assets/images/logo.png'
 import { SITE } from '~/utils/config';
 ---
 
 <span class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
-  { <img src="/src/assets/images/logo.png" alt="Logo" class="inline-block h-6 w-6"> }
-  <!-- <img src="/src/assets/images/logo.png" alt="Logo" class="inline-block h-6 w-6"> -->
+  <Image src={logo}  alt="Logo" class="inline-block h-6 w-6"></Image>
   {SITE?.name}
 </span>
