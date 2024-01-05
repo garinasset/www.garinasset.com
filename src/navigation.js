@@ -133,7 +133,7 @@ export const headerData = {
     //   href: '#',
     // },
   ],
-  actions: [{ text: '立即试用', href: 'https://github.com/garinops/www.garinasset.com', target: '_blank' }],
+  actions: [{ text: '立即试用', href: getPermalink('/documents/pre-launch'), target: '_blank' }],
 };
 
 export const footerData = {
