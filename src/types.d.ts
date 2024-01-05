@@ -280,3 +280,6 @@ export interface Content extends Headline, Widget {
 }
 
 export interface Contact extends Headline, Form, Widget {}
+
+
+export interface Signin extends Headline, Form, Widget {}

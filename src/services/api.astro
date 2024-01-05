@@ -1,0 +1,8 @@
+---
+export async function resStatsData() {
+  const response = await fetch('https://api.garinasset.com/www/v1/statistics/data');
+  const responseJson = await response.json();
+  const data = responseJson.data
+  return data;
+}
+---

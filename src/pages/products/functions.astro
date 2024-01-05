@@ -5,6 +5,7 @@ import Features2 from '~/components/widgets/Features2.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Testimonials from '~/components/widgets/Testimonials.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import { getPermalink } from '~/utils/permalinks';
 
 const metadata = {
   title: '工具函数',
@@ -16,7 +17,10 @@ const metadata = {
 
   <Hero
     tagline="工具函数"
-    actions={[{ variant:"primary", text: '开始探索', href: '#features' }]}
+    actions={[ 
+      { variant: 'primary', target: '_blank', text: 'Get Started', href: getPermalink('/documents/pre-launch') }, 
+      { text: '了解更多', href: '#features' }
+    ]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
       alt: 'AstroWind Hero Image',
@@ -42,56 +46,22 @@ const metadata = {
     columns={3}
     items={[
       {
-        title: 'Educational',
+        title: '指标概览',
         description:
-          'By harmonizing instructional design and visual appeal, templates streamline content creation for varied materials, expediting development and cultivating engaging educational spaces.',
-        icon: 'tabler:school',
+          '获取指定指标的最新数据，包括时间节点、所属国家或地区、名称属性、最新值、单位、货币单位、同比变化。',
+        icon: 'tabler:clock-24',
       },
       {
-        title: 'Interior Design',
+        title: '指标详情',
         description:
-          'Crafting functional, visually appealing spaces for residential and commercial use. Templates emphasize layout, colors, and furniture setups, offering a versatile toolkit for your design vision.',
-        icon: 'tabler:home-star',
+          '获取指定指标的所有历史数据，包括时间节点、所属国家或地区、名称属性、最新值、单位、货币单位、同比变化。',
+        icon: 'tabler:history',
       },
       {
-        title: 'Photography',
-        description: `Empowering photographers, our templates facilitate captivating storytelling. With a keen focus on layout, galleries, and typography, they cater to both professionals and enthusiasts.`,
-        icon: 'tabler:photo',
-      },
-      {
-        title: 'E-commerce',
+        title: '指标节点',
         description:
-          'Developing engaging online stores, our E-commerce templates ensure a dynamic presence to effectively showcase products. Ideal for startups or revamps.',
-        icon: 'tabler:shopping-cart',
-      },
-      {
-        title: 'Blog',
-        description:
-          'With attention to typography, these templates empower effective content presentation for writers at any stage, ensuring visually engaging and user-friendly blogs.',
-        icon: 'tabler:article',
-      },
-      {
-        title: 'Business',
-        description:
-          'Providing polished options for effective visual communication, these templates empower both startups and established companies for a professional brand presence.',
-        icon: 'tabler:building-store',
-      },
-      {
-        title: 'Branding',
-        description:
-          'Offering pre-designed elements for a consistent brand identity, including logos and marketing materials. Ideal for new ventures or revamps.',
-        icon: 'tabler:arrow-big-up-lines',
-      },
-      {
-        title: 'Medical',
-        description: `From presentations to patient forms, these tools enhance communication effectiveness for healthcare professionals. Ideal for medical practices and research pursuits.`,
-        icon: 'tabler:vaccine',
-      },
-      {
-        title: 'Fashion Design',
-        description:
-          'With attention to detail, customization, and contemporary design, they empower designers to showcase ideas cohesively. Ideal for all levels of designers.',
-        icon: 'tabler:tie',
+          '获取指定时间的指标数据，包括时间节点、所属国家或地区、名称属性、最新值、单位、货币单位、同比变化。',
+        icon: 'tabler:click',
       },
     ]}
   />
@@ -102,28 +72,28 @@ const metadata = {
     isReversed
     items={[
       {
-        title: 'High-Quality Designs',
+        title: '极简代码',
         description:
-          'Our templates feature top-tier designs that ensure a professional and polished appearance for your projects.',
-        icon: 'tabler:wand',
+          '少量代码，甚至一行即可完成工具函数的调用。',
+        icon: 'tabler:code',
       },
       {
-        title: 'Customization Tools',
+        title: '异常处理',
         description:
-          'Tailor each template to your unique needs with user-friendly customization tools that let you personalize colors, fonts, and content.',
-        icon: 'tabler:settings',
+          '异常返回对LLM友好，你只需要专注自己的程序设计。',
+        icon: 'tabler:bug-off',
       },
       {
-        title: 'Pre-Designed Elements',
+        title: 'Python支持',
         description:
-          'Save time and effort with our ready-to-use elements, including graphics, icons, and layouts that enhance the visual appeal of your creations.',
-        icon: 'tabler:presentation',
+          '提供官方Python包支持。',
+        icon: 'tabler:brand-python',
       },
       {
-        title: 'Preview and Mockup Views',
+        title: 'HTTP支持',
         description:
-          'Visualize the final outcome before making any changes using our preview and mockup views, ensuring your projects meet your expectations.',
-        icon: 'tabler:carousel-horizontal',
+          '提供官方HTTP协议接口支持。',
+        icon: 'tabler:http-get',
       },
     ]}
     image={{
@@ -132,7 +102,7 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Main Features</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">主要特性</h3>
     </Fragment>
   </Content>
 
@@ -142,28 +112,28 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Time Savings',
+        title: '节省时间',
         description:
-          'Streamline your workflow, enabling you to create stunning materials efficiently and allocate more time to your core tasks.',
+          '优化你的工作流程，使你能够高效地创建令人惊叹的AI项目，并将更多时间分配给核心任务。',
         icon: 'tabler:clock',
       },
       {
-        title: 'Professional Appearance',
+        title: '专业表现',
         description:
-          'Elevate your projects with the polished and sophisticated look that our templates provide, making a lasting impression on your audience.',
+          '通过我们的工具函数提升你的AI项目，给你的客户留下持久的印象。',
         icon: 'tabler:school',
       },
       {
-        title: 'Cost-Efficiency',
+        title: '成本效益',
         description:
-          'Benefit from cost savings by avoiding the need for custom design work, as our templates offer professional-grade designs at a fraction of the cost.',
+          '我们的工具函数只需一小部分成本就可以提供专业级的数据响应。',
         icon: 'tabler:coin',
       },
       {
-        title: 'Instant Download',
+        title: '即时响应',
         description:
-          'Enjoy immediate access to your chosen templates upon purchase, enabling you to begin working on your projects without delay.',
-        icon: 'tabler:file-download',
+          '注册后选定你的使用计划，即可访问，使您能够毫不拖延地开始项目工作。',
+        icon: 'tabler:presentation',
       },
     ]}
     image={{
@@ -172,14 +142,15 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Benefits</h3>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">好处</h3>
     </Fragment>
   </Content>
 
   <!-- Testimonials Widget *********** -->
 
   <Testimonials
-    title="Words from real customers"
+    id="testimonials"
+    title="来自真实客户的评价"
     testimonials={[
       {
         testimonial: `The designs are not only visually appealing but also highly professional. The templates have saved me a significant amount of time while helping me make a lasting impression on my clients.`,
@@ -210,9 +181,9 @@ const metadata = {
       },
     ]}
     callToAction={{
-      target: '_blank',
-      text: 'More testimonials...',
-      href: 'https://github.com/garinops/www.garinasset.com',
+      // target: '_blank',
+      text: '更多评价...',
+      href: '#testimonials',
       icon: 'tabler:chevron-right',
     }}
   />
@@ -222,10 +193,10 @@ const metadata = {
   <CallToAction
     actions={[{
       variant: "primary",
-      text: 'Start exploring',
+      text: '开始使用',
       href: '/',
     }]}
-    title="Dive into our template collection"
-    subtitle="Whether you're in business, design, or education, our templates are here to elevate your projects."
+    title="深入我们的工具函数"
+    subtitle="无论您是从事前端、后端还是IT工作，我们的工具函数都可以提升你的AI项目。"
   />
 </Layout>

@@ -1,4 +1,5 @@
 ---
+// export const prerender = false;
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
@@ -9,9 +10,10 @@ import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
-import Stats from '~/components/widgets/Stats.astro';
+import StatsIndicator from '~/components/widgets/StatsIndicator.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import { getPermalink } from '~/utils/permalinks';
+
 
 const metadata = {
   title: '嘉林数据 — 高质量的宏微观经济数据库。',
@@ -364,14 +366,7 @@ const metadata = {
 
   <!-- Stats Widget ****************** -->
 
-  <Stats
-    stats={[
-      { title: '国家或地区', amount: '132K' },
-      { title: '区域', amount: '24.8K' },
-      { title: '指标集', amount: '10.3K' },
-      { title: '时间序列', amount: '48.4K' },
-    ]}
-  />
+  <StatsIndicator/>
 
   <!-- CallToAction Widget *********** -->
 

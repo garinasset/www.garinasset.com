@@ -1,0 +1,35 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Signin from '~/components/widgets/Signin.astro';
+
+const metadata = {
+  title: '登录',
+};
+---
+
+<Layout metadata={metadata}>
+  <Signin
+    tagline="登录"
+    title="让我们开始吧！"
+    inputs={[
+      {
+        type: 'email',
+        name: 'email',
+        label: 'Account',
+        placeholder: 'user@example.com'
+      },
+      {
+        type: 'password',
+        name: 'password',
+        label: 'Password',
+        placeholder: '密码'
+      },
+    ]}
+    disclaimer={{
+      label:
+        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+    }}
+    button = '登录'
+    description="Our support team typically responds within 24 business hours."
+  />
+</Layout>
