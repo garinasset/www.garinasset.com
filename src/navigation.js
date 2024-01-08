@@ -6,6 +6,10 @@ export const headerData = {
       text: '产品及服务',
       links: [
         {
+          text: '数据库',
+          href: getPermalink('/products/database'),
+        },
+        {
           text: '聊天完成',
           href: getPermalink('/products/chat'),
         },
@@ -17,6 +21,7 @@ export const headerData = {
           text: '训练数据集',
           href: getPermalink('/products/dataset'),
         },
+
       ],
     },
     {
@@ -188,7 +193,7 @@ export const footerData = {
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/garinops/www.garinasset.com' },
   ],
   footNote: `
-    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(/src/assets/images/logo.png)]"></span>
+    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(/src/assets/images/logo-light.png)] dark:bg-[url(/src/assets/images/logo-dark.png)]"></span>
    版权所有 &copy; 2022-2024<strong>&nbsp;嘉林（北京）有限公司</strong><a class="text-blue-600 hover:underline dark:text-gray-200" href="https://github.com/onwidget/astrowind"></a>
   `,
 };
